@@ -2,8 +2,9 @@
 A simple and fast library for sending log messages from ESP8266 and ESP32 microcontrollers.
 
 Great when you want to send debug and log messages, but:
-* you can't use serial
-* it's not right next to you
+* the device can't use serial for logging
+* the device isn't plugged into your computer
+* the device isn't right next to you
 
 ## Usage
 See [examples](/examples/example.cpp) for some example usage.
@@ -54,3 +55,7 @@ The "tools" folder includes some scripts for receiving log messages sent by the 
 * [PythonUdpListener](tools/PythonUdpListener.py) for Win/Linux/Mac users using Python
 * Linux users can use `netcat` or `nc`. `nc -u -l -k 12345`
 * [PowershellUdpListener](toos/PowershellUdpListener.ps1) for Powershell / Windows
+
+On mobile phones, the app "UDP Sender / Receiver" works great as well for receiving these UDP log messages. I'm not sponsored by this app, but I do find it handy.
+Android: https://play.google.com/store/apps/details?id=com.jca.udpsendreceive
+iOS: https://apps.apple.com/us/app/udp-tcp-rest-network-utility/id1246823651
