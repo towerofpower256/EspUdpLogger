@@ -6,9 +6,13 @@ Great when you want to send debug and log messages, but:
 * it's not right next to you
 
 ## Usage
+See [examples](/examples/example.cpp) for some example usage.
+
 Setup
 
 ```cpp
+#include <EspLogUdp.h>
+
 const char* logPrefix = "[MyLog] ";
 EspLogUdp logger;
 
@@ -27,6 +31,8 @@ setup() {
 Sending a simple message.
 ```cpp
 logger.send("Hello there, I am OK");
+
+// > [MyLog] Hello there, I am OK
 ```
 
 Building and sending complex message.
